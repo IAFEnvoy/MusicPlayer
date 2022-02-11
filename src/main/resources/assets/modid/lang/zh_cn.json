@@ -1,0 +1,11 @@
+{
+    "config.musicplayer.title": "音乐播放器设置",
+    "config.musicplayer.general": "常规",
+    "config.musicplayer.open_menu_key": "打开菜单快捷键",
+    "config.musicplayer.text_color": "文字颜色",
+    "config.musicplayer.text_background_color": "文字背景颜色",
+    "config.musicplayer.locate_x": "X坐标",
+    "config.musicplayer.locate_y": "Y坐标",
+    "config.musicplayer.scale": "缩放",
+    "config.musicplayer.volumn": "音量"
+}
