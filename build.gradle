@@ -32,6 +32,9 @@ dependencies {
 
 	//malilib
   modImplementation "fi.dy.masa.malilib:malilib:${project.malilib_version}"
+
+  //gson
+  implementation 'com.google.code.gson:gson:2.8.9'
 }
 
 processResources {
@@ -69,6 +72,9 @@ jar {
 	from("LICENSE") {
 		rename { "${it}_${project.archivesBaseName}"}
 	}
+  manifest {
+    attributes "Main-Class": "net.iafenvoy.NeteaseMusicParser.Main"
+  }
 }
 
 // configure the maven publication

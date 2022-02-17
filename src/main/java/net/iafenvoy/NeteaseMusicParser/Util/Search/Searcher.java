@@ -16,7 +16,7 @@ public class Searcher {
     List<SearchResult> result = new ArrayList<>();
     String url = String.format(BaseUrls.searchUrl, keyword.replace(" ", "%20"), offset, limit, type);
     String json = HttpUtil.get(url);
-    JsonArray data = new JsonParser().parse(json).getAsJsonObject().get("result").getAsJsonObject().get("songs")
+    JsonArray data = JsonParser.parseString(json).getAsJsonObject().get("result").getAsJsonObject().get("songs")
         .getAsJsonArray();
     for (JsonElement jsonElement : data) {
       JsonObject object = jsonElement.getAsJsonObject();

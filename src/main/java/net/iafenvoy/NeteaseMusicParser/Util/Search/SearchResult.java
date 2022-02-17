@@ -62,7 +62,7 @@ public class SearchResult {
   public List<String> getLRC() {
     try {
       List<String> lrc = new ArrayList<>();
-      String data = new JsonParser().parse(HttpUtil.get(getLRCUrl())).getAsJsonObject().get("lyric").getAsString();
+      String data = JsonParser.parseString(HttpUtil.get(getLRCUrl())).getAsJsonObject().get("lyric").getAsString();
       String[] lines = data.split("\n");
       for (String line : lines)
         lrc.add(line);

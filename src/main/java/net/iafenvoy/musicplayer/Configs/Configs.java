@@ -20,7 +20,7 @@ import net.iafenvoy.musicplayer.Configs.NativeConfigType.NativeHotkey;
 import net.iafenvoy.musicplayer.Configs.NativeConfigType.NativeInt;
 
 public class Configs implements IConfigHandler {
-  private static final String FILE_PATH = "./config/ornaments.json";
+  private static final String FILE_PATH = "./config/musicplayer.json";
   private static final File CONFIG_DIR = new File("./config");
 
   public static class General {
